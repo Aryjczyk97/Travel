@@ -20,10 +20,11 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	background-color: $bgc-color;
 	color: $main-color;
+	
 }
 
 .nav {
-	position: absolute;
+	position: fixed;
 	display: flex;
 	top: 0;
 	justify-content: space-around;
@@ -32,11 +33,15 @@ body {
 	width: 100%;
 	height: 100%;
 	z-index: 100;
-	background-image: $header-gradient;
+	background-image: $menu-color;
 	color: $main-color;
 	transform: translateX(100%);
 	transition: transform 0.3s;
-	z-index: 100;
+
+	&__logo {
+		display: none;
+	}
+	
 
 
 
@@ -59,20 +64,24 @@ body {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: space-around;
-		height: 70%;
-		width: 60%;
+		justify-content: center;
+		height: 50%;
+		width: 100%;
 		padding: 0.52em;
+		
 	}
 
 	&__link {
+		
 		position: relative;
 		display: block;
 		text-decoration: none;
 		color: $main-color;
+		text-align: center;
+		
 
 		width: 100%;
-		padding: 1.5em;
+		padding: 1em;
 
 		&::before {
 			position: absolute;
@@ -100,7 +109,7 @@ body {
 
 .burger-btn {
 	// display: none;
-	position: fixed;
+	position: absolute;
 	top: 20px;
 	right: 20px;
 	background: none;
