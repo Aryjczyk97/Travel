@@ -400,7 +400,7 @@ body {
 
 @media (min-width: 992px) {
 	.nav {
-		// position: relative;
+		position: absolute;
 		transform: translateX(0);
 		background: none;
 		height: 12vh;
