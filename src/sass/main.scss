@@ -157,6 +157,8 @@ body {
 			transition-delay: 0.1s;
 		}
 	}
+
+	
 }
 // }
 
@@ -307,6 +309,8 @@ body {
 
 		text-transform: uppercase;
 	}
+
+	
 }
 
 .tour {
@@ -358,6 +362,10 @@ body {
 				background-image: $shadow-gradient, url('../img/river.jpg');
 			}
 		}
+	}
+
+	.text-heading--card {
+		text-align: center;
 	}
 }
 
